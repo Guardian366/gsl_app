@@ -1,6 +1,7 @@
 import 'package:my_gsl_app/data.dart';
 import 'package:my_gsl_app/classes.dart';
 import 'package:flutter/material.dart';
+import 'package:my_gsl_app/tutorials.dart';
 import 'rating_bar.dart';
 
 class TopicPage extends StatelessWidget {
@@ -44,7 +45,8 @@ class TopicPage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => CategoryScreen(category),
+                    builder: (context) =>
+                        TutorialPage(category: topic.category),
                   ),
                 );
               },
