@@ -1,4 +1,5 @@
 import 'package:my_gsl_app/data.dart';
+import 'package:my_gsl_app/classes.dart';
 import 'package:flutter/material.dart';
 import 'rating_bar.dart';
 
