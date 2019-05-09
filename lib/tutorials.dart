@@ -52,4 +52,3 @@ hexColor(String colorhexcode) {
   }
 
 }
-}
