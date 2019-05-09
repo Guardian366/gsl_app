@@ -41,9 +41,12 @@ class TopicPage extends StatelessWidget {
             shadowColor: Color(hexColor('#f89a62')),
             child: InkWell(
               onTap: () {
-                // Navigator.pushNamed(context, FirstScreen.tag);
-
-                //Navigator.of(context).pushNamed(Alphabet.tag);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => CategoryScreen(category),
+                  ),
+                );
               },
               child: Column(children: <Widget>[
                 Padding(
