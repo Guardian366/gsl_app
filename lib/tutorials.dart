@@ -35,25 +35,24 @@ class TutorialPage extends StatelessWidget {
               fontFamily: 'Quicksand-Light')),
     );
 
-    createSignTile(Sign sign) =>
-        Container(
-          width: screenWidth, color: Colors.white, child: 
-          Padding(
+    createSignTile(Sign sign) => Container(
+        width: screenWidth,
+        color: Colors.white,
+        child: Padding(
             padding: EdgeInsets.all(40.0),
-            child:
-            Column(children:<Widget>[
-          CircleAvatar(
-            radius: 150.0,
-            backgroundColor: Colors.transparent,
-            backgroundImage: AssetImage(sign.image),
-          ), 
-          Text(sign.text,
-              style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 42.0,
-                  fontFamily: 'Quicksand-Light',
-                  color: Color(hexColor('#f89a62'))))
-        ]));
+            child: Column(children: <Widget>[
+              CircleAvatar(
+                radius: 150.0,
+                backgroundColor: Colors.transparent,
+                backgroundImage: AssetImage(sign.image),
+              ),
+              Text(sign.text,
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 42.0,
+                      fontFamily: 'Quicksand-Light',
+                      color: Color(hexColor('#f89a62'))))
+            ])));
 
     return Scaffold(
       backgroundColor: Colors.white,
